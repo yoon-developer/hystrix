@@ -1,0 +1,15 @@
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: '*'
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 10000
+    book:
+      execution.isolation.thread.timeoutInMilliseconds: 1000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
