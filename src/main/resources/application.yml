@@ -1,3 +1,6 @@
+server:
+  port: 80
+
 hystrix:
   dashboard:
     proxy-stream-allow-list: '*'
